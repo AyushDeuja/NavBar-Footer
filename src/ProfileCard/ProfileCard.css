@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+}
+.ProfileImg {
+  height: 55px;
+  width: 55px;
+}
+.textContainer {
+  color: black;
+  padding: 10px;
+}
