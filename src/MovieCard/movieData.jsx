@@ -151,4 +151,12 @@ export const movieData = [
     poster_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqmv14r2StaEXNf9IHHGy-hdVGRrK88lkeEhO4g59kf-b3dM7",
   },
+  {
+    id: 21,
+    title: "Avengers: Infinity War",
+    genre: "Action",
+    rating: 9.1,
+    poster_url:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKuN93ffQ8ou5gCj5JaYTSJAXfW7A26o1tRxjtjt_u7Nk17vWzpnwtqfhtpk77-JFbR8&usqp=CAU",
+  },
 ];

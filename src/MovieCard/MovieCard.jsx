@@ -3,12 +3,20 @@ import "./movieCard.css";
 import { movieData } from "./movieData";
 
 const MovieCard = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [search, setSearch] = useState("");
+  const [searchItem, setSearchItem] = useState("title");
 
-  //filter movie on the basis of search of title
-  const filterMovies = movieData.filter((movie) =>
-    movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filterMovies = movieData.filter((movie) => {
+    if (searchItem === "title") {
+      return movie.title.toLowerCase().includes(search.toLowerCase());
+    } else if (searchItem === "genre") {
+      return movie.genre.toLowerCase().includes(search.toLowerCase());
+    } else if (searchItem === "rating") {
+      return movie.rating >= search;
+    }
+    return false;
+  });
+
   return (
     <div className="movieContainer">
       <div className="inputField">
@@ -19,10 +27,21 @@ const MovieCard = () => {
             borderRadius: "5px",
           }}
           type="text"
-          placeholder="Search Movies"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder={`Search movies on the basis of ${searchItem}`}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
         />
+        <select
+          name="searchOptions"
+          id="searchOptions"
+          className="selectContainer"
+          value={searchItem}
+          onChange={(e) => setSearchItem(e.target.value)}
+        >
+          <option value="title">title</option>
+          <option value="genre">genre</option>
+          <option value="rating">rating</option>
+        </select>
       </div>
       <div className="movieCardContainer">
         {filterMovies.length > 0 ? (
@@ -34,7 +53,8 @@ const MovieCard = () => {
                 alt="Movie-Image"
               />
               <h2>{movie.title}</h2>
-              <p>{movie.genre}</p>
+              <p>Genre: {movie.genre}</p>
+              <p>Rating: {movie.rating}⭐</p>
             </div>
           ))
         ) : (
