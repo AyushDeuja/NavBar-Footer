@@ -1,22 +1,6 @@
 import React, { useState } from "react";
 import "./movieCard.css";
-const movieData = [
-  {
-    id: 1,
-    title: "Magadheera",
-    genre: "Drama",
-  },
-  {
-    id: 2,
-    title: "Inception",
-    genre: "Crime",
-  },
-  {
-    id: 3,
-    title: "Titanic",
-    genre: "Romance",
-  },
-];
+import { movieData } from "./movieData";
 
 const MovieCard = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -44,6 +28,11 @@ const MovieCard = () => {
         {filterMovies.length > 0 ? (
           filterMovies.map((movie) => (
             <div className="movieCard" key={movie.id}>
+              <img
+                className="posterImage"
+                src={movie.poster_url}
+                alt="Movie-Image"
+              />
               <h2>{movie.title}</h2>
               <p>{movie.genre}</p>
             </div>
