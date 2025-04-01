@@ -11,7 +11,7 @@ export const movieData = [
     id: 3,
     title: "Titanic",
     genre: "Romance",
-    rating: 7.9,
+    rating: 7.2,
     poster_url:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwQlOeIost26Qv6cAAT73c9LLi0oRcXOJ6QQ5h3J1fUogSX_sD",
   },
@@ -35,7 +35,7 @@ export const movieData = [
     id: 6,
     title: "The Dark Knight",
     genre: "Action",
-    rating: 9.0,
+    rating: 6.0,
     poster_url:
       "https://www.themoviedb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
   },
@@ -51,7 +51,7 @@ export const movieData = [
     id: 8,
     title: "Forrest Gump",
     genre: "Drama",
-    rating: 8.8,
+    rating: 7.8,
     poster_url:
       "https://www.themoviedb.org/t/p/original/saHP97rTPS5eLmrLQEcANmKrsFl.jpg",
   },
@@ -83,7 +83,7 @@ export const movieData = [
     id: 12,
     title: "Fight Club",
     genre: "Drama",
-    rating: 8.8,
+    rating: 7.8,
     poster_url:
       "https://www.themoviedb.org/t/p/original/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
   },
