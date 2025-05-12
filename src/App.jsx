@@ -11,7 +11,7 @@ function App() {
       <NavBar />
       <MovieCard />
       {/* <ToggleTheme /> */}
-      <div style={{ marginTop: "200px" }}>
+      <div style={{ marginTop: "150px" }}>
         <Footer />
       </div>
       {/* <GetAllMovies /> */}
