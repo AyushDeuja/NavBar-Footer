@@ -20,3 +20,8 @@
 .footer a:hover {
   color: #f0a500;
 }
+
+.footerImage {
+  display: flex;
+  flex-direction: row;
+}
