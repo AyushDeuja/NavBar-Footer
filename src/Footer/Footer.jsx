@@ -5,7 +5,7 @@ import FooterLogo from "../FooterLogo/FooterLogo";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer">
+      <footer className="footer ">
         <p>&copy; copyright...</p>
         <div>
           <NavLinks isNav={false} />
