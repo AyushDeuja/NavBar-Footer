@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer ">
-        <p>&copy; copyright...</p>
+        <p style={{ padding: "20px" }}>&copy; copyright...</p>
         <div>
           <NavLinks isNav={false} />
         </div>
