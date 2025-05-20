@@ -4,7 +4,8 @@
   list-style-type: none;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
+  background-color: #282727;
   color: white;
   position: sticky;
+  top: 0;
 }
