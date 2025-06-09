@@ -2,13 +2,14 @@
 
 This contains the dummy datas of movies used statically for practice of react.js
 
-# Components
+## Components
 
 - Navbar
 - Body
 - Footer
 
-# Peckages Used
+## 🛠️ Built With
 
-- React
-- React-Dom
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+
